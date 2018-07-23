@@ -19,6 +19,7 @@ export class AppComponent {
     constructor(public router: Router,
     ) {
         this.loginStatus = true;
+        config.time = (config.time) / 1000;
         console.log(config.time)
     }
 
