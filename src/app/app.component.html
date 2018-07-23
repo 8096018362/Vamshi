@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">ANGULAR</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a routerLink="/course">course</a></li>
+            <li><a routerLink="/childrens">childrens</a></li>
+            <li><a routerLink="/parents">parents</a></li>
+        </ul>
+    </div>
+</nav>
+<app-session></app-session>
+<router-outlet>
+</router-outlet>
+
+<div id="alertPopup" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">QASS</h4>
+            </div>
+            <div class="modal-body">
+                <p>Write your text here.....</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" (click)="closePopup()">Yes</button>
+                <button type="button" class="btn btn-default" (click)="extendTimeOut()">No</button>
+            </div>
+        </div>
+    </div>
+</div>

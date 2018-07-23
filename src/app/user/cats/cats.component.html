@@ -1,0 +1,23 @@
+<div class="container" *ngIf="selectedApplication">
+    <!--BANNER PAGE-->
+    <app-banner></app-banner>
+
+    <h2 style="padding:5px;color:red;text-align:center">{{selectedApplication.applicationName}}</h2>
+
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"> 
+            <div class="selected-app">
+                <div class="attr">
+                    <span>NAME</span>:{{selectedApplication.applicationName}}</div>
+                <div class="attr">
+                    <span>DESCRIPTION</span>:{{selectedApplication.description}}</div>
+                <div class="attr">
+                    <span>ROLE</span>:{{selectedApplication.roleName}}</div>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <button (click)="goBack()">goBack</button>
+
+</div>
